@@ -26,32 +26,32 @@ A full-stack real-time chat application built using modern web technologies. It 
 
 ## 🧱 Project Structure
 
-real-time-chat-app/
-├── client/ # Frontend (Next.js App Router + Tailwind v4)
-│ ├── src/
-│ │ ├── app/ # Pages and layouts (App Router)
-│ │ ├── components/ # Reusable UI elements (ChatBox, Message, Sidebar)
-│ │ ├── hooks/ # Custom React hooks (useSocket, useAuth)
-│ │ ├── lib/ # Utility functions/helpers
-│ │ ├── socket/ # Socket.IO client setup
-│ │ ├── styles/ # Tailwind CSS & global styles
-│ │ └── types/ # TypeScript types/interfaces
-│ ├── tailwind.config.ts # Tailwind CSS configuration
-│ ├── next.config.js # Next.js configuration
-│ └── .env.local # Frontend environment variables
-│
-├── server/ # Backend (Express + Socket.IO + MongoDB)
-│ ├── config/ # MongoDB connection setup
-│ ├── controllers/ # Route logic (message handling, user auth)
-│ ├── models/ # Mongoose schemas/models
-│ ├── routes/ # API routes (optional)
-│ ├── index.ts # Server entry point
-│ ├── tsconfig.json # TypeScript config for backend
-│ └── .env # Backend environment variables
-│
-├── .gitignore # Files to exclude from git
-├── README.md # Project overview
-└── package.json # Project metadata
+real-time-chat-app/ <br>
+├── client/ # Frontend (Next.js App Router + Tailwind v4)<br>
+│ ├── src/<br>
+│ │ ├── app/ # Pages and layouts (App Router)<br>
+│ │ ├── components/ # Reusable UI elements (ChatBox, Message, Sidebar)<br>
+│ │ ├── hooks/ # Custom React hooks (useSocket, useAuth)<br>
+│ │ ├── lib/ # Utility functions/helpers<br>
+│ │ ├── socket/ # Socket.IO client setup<br>
+│ │ ├── styles/ # Tailwind CSS & global styles<br>
+│ │ └── types/ # TypeScript types/interfaces<br>
+│ ├── tailwind.config.ts # Tailwind CSS configuration<br>
+│ ├── next.config.js # Next.js configuration<br>
+│ └── .env.local # Frontend environment variables<br>
+│<br>
+├── server/ # Backend (Express + Socket.IO + MongoDB)<br>
+│ ├── config/ # MongoDB connection setup<br>
+│ ├── controllers/ # Route logic (message handling, user auth)<br>
+│ ├── models/ # Mongoose schemas/models<br>
+│ ├── routes/ # API routes (optional)<br>
+│ ├── index.ts # Server entry point<br>
+│ ├── tsconfig.json # TypeScript config for backend<br>
+│ └── .env # Backend environment variables<br>
+│<br>
+├── .gitignore # Files to exclude from git<br>
+├── README.md # Project overview<br>
+└── package.json # Project metadata<br>
 
 ---
 
@@ -59,29 +59,29 @@ real-time-chat-app/
 
 1. **Clone the repository:**
 
-git clone https://github.com/your-username/real-time-chat-app.git
+git clone https://github.com/your-username/real-time-chat-app.git<br>
 cd real-time-chat-app
 
-2. **Install frontend and backend dependencies:**
+2. **Install frontend and backend dependencies:** 
 
-In both client and server
+In both client and server<br>
 npm install
 
 3. **Setup environment variables:**
 
 client/.env.local
 
-Paste: 
+Paste: <br>
 NEXT_PUBLIC_SOCKET_URL=http://localhost:5000
 
 server/.env
 
-Paste: 
-PORT=5000
+Paste: <br>
+PORT=5000<br>
 MONGO_URI=mongodb://localhost:27017/chatapp
 
 4. **Run the servers:**
 
-In both client and server
+In both client and server<br>
 npm run dev 
 
